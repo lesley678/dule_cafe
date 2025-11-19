@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dule Cafe | Enquiry</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Dule Cafe</h1></div>
+      <nav class="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/products.html">Products</a></li>
+          <li><a href="/pages/enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/order.html">Order</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Enquiry Form</h2>
+    <form id="enquiryForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Enquiry</button>
+      <p id="formMessage" class="success" style="display:none;">Your enquiry has been sent!</p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentYearFooterE"></span> Dule Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

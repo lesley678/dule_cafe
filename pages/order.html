@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dule Cafe | Order</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Dule Cafe</h1></div>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/products.html">Products</a></li>
+          <li><a href="/pages/enquiry.html">Enquiry</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/order.html" class="active">Order</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Place an Order</h2>
+
+    <form id="orderForm" class="order-form" novalidate>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="customerName">Full Name</label>
+          <input type="text" id="customerName" name="customerName" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="customerEmail">Email</label>
+          <input type="email" id="customerEmail" name="customerEmail" placeholder="you@example.com" required>
+        </div>
+
+        <fieldset class="product-list" aria-label="Products">
+          <legend>Select products</legend>
+          <label>Coffee ($3.50) <input type="number" name="coffee" min="0" value="0" inputmode="numeric"></label>
+          <label>Pastries ($2.50) <input type="number" name="pastry" min="0" value="0" inputmode="numeric"></label>
+          <label>Cake ($15.00) <input type="number" name="cake" min="0" value="0" inputmode="numeric"></label>
+          <label>Tea ($3.00) <input type="number" name="tea" min="0" value="0" inputmode="numeric"></label>
+        </fieldset>
+
+        <p id="totalPrice">Total: $0.00</p>
+
+        <button type="submit" class="btn">Place Order</button>
+      </div>
+
+      <div id="orderMessage" class="confirmation" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentYearFooterO"></span> Dule Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dule Cafe | Products</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Dule Cafe</h1></div>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/products.html" class="active">Products</a></li>
+          <li><a href="/pages/enquiry.html">Enquiry</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/order.html">Order</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Our Products</h2>
+
+    <div class="cards products-grid">
+      <figure class="product-card lightbox-target">
+        <img src="/Assets/coffe.jpg" alt="Premium Coffee" data-large="/Assets/coffe.jpg">
+        <figcaption>
+          <h3>Premium Coffee</h3>
+          <p>$3.50</p>
+        </figcaption>
+      </figure>
+
+      <figure class="product-card lightbox-target">
+        <img src="/Assets/assorted pastries.webp" alt="Assorted Pastries" data-large="/Assets/assorted pastries.webp">
+        <figcaption>
+          <h3>Assorted Pastries</h3>
+          <p>$2.50</p>
+        </figcaption>
+      </figure>
+
+      <figure class="product-card lightbox-target">
+        <img src="/Assets/delicious cake.webp" alt="Delicious Cake" data-large="/Assets/delicious cake.webp">
+        <figcaption>
+          <h3>Delicious Cakes</h3>
+          <p>$15.00</p>
+        </figcaption>
+      </figure>
+
+      <figure class="product-card lightbox-target">
+        <img src="/Assets/speciality tea.jpg" alt="Specialty Tea" data-large="/Assets/speciality tea.jpg">
+        <figcaption>
+          <h3>Specialty Tea</h3>
+          <p>$3.00</p>
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentYearFooterP"></span> Dule Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

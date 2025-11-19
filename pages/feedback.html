@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dule Cafe | Feedback</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo"><h1>Dule Cafe</h1></div>
+      <nav class="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/products.html">Products</a></li>
+          <li><a href="/pages/enquiry.html">Enquiry</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/order.html">Order</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Rate Your Experience</h2>
+
+    <form id="feedbackForm" novalidate>
+      <div class="star-rating" role="radiogroup" aria-label="Rating">
+        <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+        <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+        <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+        <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+        <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Comments</label>
+        <textarea id="comments" placeholder="Write your feedback..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit Feedback</button>
+      <p id="successMsg" class="success" style="display:none;">Thank you! Your feedback has been received.</p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentYearFooterF"></span> Dule Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
